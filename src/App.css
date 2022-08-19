@@ -1,0 +1,228 @@
+.App {
+    text-align: center;
+  }
+  
+  .App-logo {
+    height: 10vmin;
+    pointer-events: none;
+  }
+  
+  .footer-logo {
+    height: 3vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 1s linear;
+    }
+  }
+  
+  .App-header {
+    /* background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #282c34;
+    height: 10vh;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: left;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    z-index: 1;
+  }
+  
+  .logo-side a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .menu-list {
+    list-style: none;
+    font-weight: lighter;
+    display: flex;
+    position: absolute;
+    top: 20px;
+  }
+  
+  .menu-list a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 14px;
+  }
+
+  .menu-list h6 {
+    color: white;
+    text-decoration: none;
+    padding: 14px 14px;
+  }
+  
+  .body-content {
+    margin-top: 6rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .App-footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #282c34;
+    height: 2vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* font-size: calc(10px + 2vmin); */
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  .shadow-success:hover {
+    transition: .15s ease-in-out;
+    box-shadow: 0 .5rem 1rem rgba(25,135,84,.15);
+  }
+  
+  .shadow-primary:hover {
+    transition: .15s ease-in-out;
+    box-shadow: 0 .5rem 1rem rgba(13,110,253,.15);
+  }
+  
+  .shadow-secondary:hover {
+    transition: .15s ease-in-out;
+    box-shadow: 0 .5rem 1rem rgba(108,117,125,.15);
+  }
+  
+  .shadow-danger:hover {
+    transition: .15s ease-in-out;
+    box-shadow: 0 .5rem 1rem rgba(220,53,69,.15);
+  }
+  
+  .shadow-warning:hover {
+    transition: .15s ease-in-out;
+    box-shadow: 0 .5rem 1rem rgba(255,193,7,.15);
+  }
+  
+  .shadow-info:hover {
+    transition: .15s ease-in-out;
+    box-shadow: 0 .5rem 1rem rgba(13,202,240,.15);
+  }
+  
+  .shadow-light:hover {
+    transition: .15s ease-in-out;
+    box-shadow: 0 .5rem 1rem rgba(248,249,250,.15);
+  }
+  
+  .shadow-dark:hover {
+    transition: .15s ease-in-out;
+    box-shadow: 0 .5rem 1rem rgba(33,37,41,.15);
+  }
+  
+  .card {
+    cursor: pointer;
+    height: 243px;
+    width: 400px;
+  }
+
+  .login-form input {
+    outline: none !important;
+  }
+
+  .login-form {
+    /* background-color: #4c0b56; */
+    /* color: white; */
+    cursor: unset;
+    border-radius: 5px;
+  }
+  .login-btn {
+    left: 3px;
+    position: relative;
+  }
+  .status-badge {
+    width: 22%;
+    left: 68%;
+  }
+  
+  .priority-badge {
+    width: 20%;
+    left: 90%;
+  }
+
+  .ask-email-cred{
+    background-color: #ff000052;
+  }
+  .ask-password-cred{
+    background-color: #ff000052;
+  }
+  
+  .button-to-add {
+    background-color: #0d6efd;
+    color: white;
+    font-size: 2rem;
+    border: 1px solid #0d6efd;
+    border-radius: 50%;
+    padding: 4px 20px 12px 20px;
+    position: fixed;
+    bottom: 60px;
+    right: 40px;
+  }
+
+  .alert-pop {
+    position: fixed;
+    bottom: 60px;
+    left: 40px;
+  }
+  .toast {
+    width: 500px;
+  }
+
+  .user-content {
+    text-align: -webkit-center;
+  }
+
+  .user-details {
+    list-style: none;
+    background-color: #b01bb0;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    max-width: 80%;
+    cursor: pointer;
+  }
+
+  .user-details:hover {
+    transition: .15s ease-in-out;
+    box-shadow: 0 .5rem 1rem rgba(176, 27, 176,.15);
+    transform: scale(1.1);
+  }
+
+  .button-to-add:hover {
+    box-shadow: 0 1rem 3rem rgba(13, 110, 253, .175);
+  }
+  
+  .modal-dialog.modal-dialog-scrollable.todoModal {
+    max-width: 80%;
+  }
+
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
