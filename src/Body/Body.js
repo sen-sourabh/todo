@@ -38,7 +38,7 @@ function Body() {
     } else {
       let index = todo_list.findIndex((e => e.id === newTodo.id));
       todo_list.splice(index, 1);
-      setTodoList([...todo_list, newTodo]);
+      setTodoList([newTodo, ...todo_list]);
     }    
   }
 

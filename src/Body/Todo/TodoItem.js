@@ -3,7 +3,7 @@ import React from 'react'
 export default function TodoItem({ todo, onDelete, showAddTodo }) {
   return (
     <>
-      <div className="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+      <div className="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
           <div className={`card text-start mb-3 ${todo.cardClasses}`}>
             <span className={`position-absolute top-0 translate-middle badge rounded-pill status-badge ${todo.statusClasses}`}>
               { todo.status }
@@ -32,7 +32,7 @@ export default function TodoItem({ todo, onDelete, showAddTodo }) {
               <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body text-start">
-              <div className="mb-3">
+              <div className={`mb-3`}>
                 <h3> { todo.title } </h3>
               </div>
               <div className="mb-3">

@@ -11,13 +11,7 @@ export default function ReduxTransaction() {
   const dispatch = useDispatch();
   const [message, setMessage] = useState(null);
   const [error, setError] = useState(false);
-  const random = useMemo(() => Math.random(0, 10).toFixed(2), [amount]);
 
-
-  const rG = (a = random) => {
-    return a;
-  }
-  const b = useCallback(rG, []);
 
 
   useEffect(() => {
@@ -97,7 +91,6 @@ export default function ReduxTransaction() {
             <button className="btn btn-md btn-outline-danger m-2" disabled={amount === 0 ? true : false} onClick={subMoney}>Subtract (-)</button>
             <span className="p-3"><b>{amount}</b></span>
             <button className="btn btn-md btn-outline-primary m-2" onClick={addMoney}>Add (+)</button>
-            {`Hello Random: ${random} ${b(random)}`}
         </div>
         { error && <Alerts msg={message}/> }
     </Fragment>
