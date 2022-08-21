@@ -1,4 +1,4 @@
-import React, { Fragment, useCallback, useEffect, useMemo, useState } from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { decAmount, incAmount } from '../../actions/actionTransaction';
 // import amountReducer from '../../reducers/reducerTransaction';
@@ -11,7 +11,6 @@ export default function ReduxTransaction() {
   const dispatch = useDispatch();
   const [message, setMessage] = useState(null);
   const [error, setError] = useState(false);
-
 
 
   useEffect(() => {

@@ -1,8 +1,13 @@
 import { combineReducers } from "redux";
-import amountReducer from "./reducerTransaction";
+import { amountReducer, calcReducer } from "./reducerTransaction";
 
 const rootReducer = combineReducers({ 
-    amountReducer
+    amountReducer,
+    calcReducer
 });
 
 export default rootReducer;
+
+
+
+

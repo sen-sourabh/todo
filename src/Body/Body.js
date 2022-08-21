@@ -8,6 +8,7 @@ import {
 import About from './About';
 import Users from './Users/Users';
 import ReduxTransaction from './ReduxTransaction/ReduxTransaction';
+import Calc from './Calc/Calc';
 
 function Body() {
   let initTodos;
@@ -56,6 +57,7 @@ function Body() {
         <Route exact path="/textop" element={<TextOp />} />
         <Route exact path="/users" element={<Users />} />
         <Route exact path="/trans" element={<ReduxTransaction />} />
+        <Route exact path="/calc" element={<Calc />} />
       </Routes>
       
     </>

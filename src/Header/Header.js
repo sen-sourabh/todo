@@ -55,6 +55,9 @@ function Header() {
                         <li>
                           <Link to="/trans"> Redux Transaction </Link>
                         </li>
+                        <li>
+                          <Link to="/calc"> Redux Calculator </Link>
+                        </li>
                       </ul>
                     </div>
                     <div className="col-md-2">
